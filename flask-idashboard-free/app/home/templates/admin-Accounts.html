@@ -1,17 +1,145 @@
-
 {% extends "layouts/base.html" %}
 
-{% block title %} Page Blank {% endblock %}
+{% block title %} Accounts {% endblock %}
 
 <!-- Specific CSS goes HERE -->
 {% block stylesheets %}{% endblock stylesheets %}
 
 {% block content %}
 
-    <!-- Add Content Here -->
-    <h1>
-        Your content here
-    </h1>
+  <div class="yoo-height-b30 yoo-height-lg-b30"></div>
+  <div class="container">
+    <div class="yoo-uikits-heading">
+      <h2 class="yoo-uikits-title">Create Accounts</h2>
+    </div>
+  </div>
+
+
+        <div class="yoo-height-b30 yoo-height-lg-b30"></div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+        <div class="yoo-card yoo-style1">
+          <div class="yoo-card-heading">
+            <div class="yoo-card-heading-left">
+              <h2 class="yoo-card-title">Enter account details</h2>
+            </div>
+            <div class="yoo-card-heading-right">
+              <button type="button" class="yoo-card-btn" data-toggle="modal" data-target="#ComplesFormRow"><ion-icon name="code"></ion-icon></button>
+              <!-- Code Modal -->
+              <div class="modal fade" id="ComplesFormRow">
+                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Enter account details</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <ion-icon name="close"></ion-icon>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;form&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group level-up"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"inputAddress"</span><span class="nt">&gt;</span>Address<span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"inputAddress"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group level-up"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"inputAddress2"</span><span class="nt">&gt;</span>Address 2<span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"inputAddress2"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-row"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group level-up col-md-6"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"inputCity"</span><span class="nt">&gt;</span>City<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"inputCity"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group level-up col-md-4"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"inputState"</span><span class="nt">&gt;</span>State<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;select</span> <span class="na">id=</span><span class="s">"inputState"</span> <span class="na">class=</span><span class="s">"form-control"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;option</span> <span class="na">selected</span><span class="nt">&gt;</span>Choose...<span class="nt">&lt;/option&gt;</span>
+      <span class="nt">&lt;option&gt;</span>...<span class="nt">&lt;/option&gt;</span>
+    <span class="nt">&lt;/select&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group level-up col-md-2"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"inputZip"</span><span class="nt">&gt;</span>Zip<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"inputZip"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group level-up"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"custom-control custom-checkbox"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"custom-control-input"</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"gridCheck"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"custom-control-label"</span> <span class="na">for=</span><span class="s">"gridCheck"</span><span class="nt">&gt;</span>
+      Check me out
+    <span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>Sign in<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;/form&gt;</span></code></pre></div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="yoo-card-body">
+            <div class="yoo-padd-lr-20">
+              <div class="yoo-height-b20 yoo-height-lg-b20"></div>
+              <form>
+                <div class="form-group level-up">
+                  <label for="inputAddress">Account number (GL)</label>
+                  <input type="text" class="form-control" id="inputAcct">
+                </div>
+                <div class="form-group level-up">
+                  <label for="inputAddress2">Account Description</label>
+                  <input type="text" class="form-control" id="inputAcctDesc">
+                </div>
+                <div class="form-row">
+                  <div class="col-md-6">
+                    <div class="form-group level-up">
+                      <label for="inputCity">Company</label>
+                      <input type="text" class="form-control" id="inputCity">
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="form-group">
+                      <div class="yoo-select">
+                        <select id="inputState" class="form-control">
+                          <option selected>Effective From</option>
+                          <option>...</option>
+                          <option>...</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <div class="form-group level-up">
+                      <label for="inputZip">Zip</label>
+                      <input type="text" class="form-control" id="inputZip">
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="custom-control custom-checkbox">
+                    <input class="custom-control-input" type="checkbox" id="gridCheck">
+                    <label class="custom-control-label" for="gridCheck">
+                      <span class="custom-control-shadow"></span>Check me out
+                    </label>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Add</button>
+              </form>
+              <div class="yoo-height-b20 yoo-height-lg-b20"></div>
+            </div>
+          </div>
+        </div><!-- .yoo-card -->
+
+        <div class="yoo-height-b30 yoo-height-lg-b30"></div>
+
+      </div><!-- .col -->
+    </div>
+  </div>
+  <div class="yoo-height-b30 yoo-height-lg-b30"></div>
 
 {% endblock content %}
 
